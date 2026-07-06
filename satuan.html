@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Konversi Satuan</title>
+<link rel="stylesheet" href="satuan.css">
+</head>
+<body>
+
+<div class="card">
+  <div class="header">
+    <h1>Konversi Satuan</h1>
+    <p>Ubah nilai antar satuan dengan cepat</p>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-cat="panjang">Panjang</button>
+    <button class="tab" data-cat="berat">Berat</button>
+    <button class="tab" data-cat="suhu">Suhu</button>
+  </div>
+
+  <div class="converter">
+    <div class="field">
+      <label>Dari</label>
+      <div class="row">
+        <input type="number" id="inputValue" placeholder="0" value="1">
+        <select id="fromUnit"></select>
+      </div>
+    </div>
+
+    <button id="swapBtn" class="swap" title="Tukar satuan">⇅</button>
+
+    <div class="field">
+      <label>Ke</label>
+      <div class="row">
+        <div class="result" id="outputValue">0</div>
+        <select id="toUnit"></select>
+      </div>
+    </div>
+  </div>
+
+  <div class="note" id="note"></div>
+</div>
+
+<script src="satuan.js"></script>
+</body>
+</html>
